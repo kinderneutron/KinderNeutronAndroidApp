@@ -7,17 +7,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/black">
 
     <!-- Header -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="\u25A0 KinderNeutron"
+        android:text="KinderNeutron"
+        android:fontFamily="serif"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginBottom="20dp"/>
+        android:textColor="@color/yellow"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@mipmap/imagekn_round"
+        android:drawablePadding="8dp"
+        android:paddingTop="4dp" />
 
 
 
@@ -43,66 +48,86 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="serif"
                 android:text="Welcome Back!"
-                android:textStyle="bold"
-                android:textSize="48sp"
-                android:textColor="@color/black"
-                android:layout_marginBottom="20dp"/>
-
+                android:textColor="@color/red"
+                android:textSize="34sp"
+                android:textStyle="bold" />
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/username"
-                android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/baseline_person_24"
-                android:drawablePadding="8dp"
-                android:hint="Username"
-                android:padding="8dp"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/cardview_dark_background"
-                android:layout_marginTop="20dp"/>
-
-            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/password"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/custom_edittext"
+                android:backgroundTint="@color/black"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:fontFamily="serif"
+                android:hint="Username"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey" /> <!-- You can also set hint color to white -->
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:backgroundTint="@color/black"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="8dp"
+                android:fontFamily="serif"
+                android:inputType="textPassword"
                 android:hint="Password"
                 android:padding="8dp"
-                android:inputType="textPassword"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/cardview_dark_background"
-                android:layout_marginTop="10dp"/>
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textColorHint="@color/grey" /> <!-- Setting hint color to white -->
+
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/loginButton"
                 android:text="Sign In"
+                android:fontFamily="serif"
+                android:textStyle="bold"
                 android:textSize="18sp"
+                android:textColor="@color/white"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/black"
                 android:onClick="onLoginButtonClicked"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="serif"
+                android:paddingTop="25dp"
                 android:text="New to KinderNeutron?"
-                android:textSize="18sp"
                 android:textAlignment="center"
-                android:textColor="@color/black"
-                android:layout_marginBottom="20dp"/>
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+
             <Button
+                android:id="@+id/registerButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/registerButton"
-                android:text="Register"
-                android:textSize="18sp"
                 android:layout_marginTop="20dp"
-                android:textColor="@android:color/white"
                 android:backgroundTint="@color/red"
-                android:onClick="onRegisterButtonClicked"/>
+                android:fontFamily="serif"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <!--                android:onClick="onRegisterButtonClicked"-->
+<!--                tools:ignore="OnClick" -->
+
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

@@ -31,7 +31,7 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         // Initialize UI components
-        usernameEditText = findViewById(R.id.username1);
+        usernameEditText = findViewById(R.id.username);
         passwordEditText = findViewById(R.id.password1);
         emailEditText = findViewById(R.id.email);
         authTokenEditText = findViewById(R.id.auth);
@@ -108,7 +108,7 @@ public class SignUp extends AppCompatActivity {
             OkHttpClient client = new OkHttpClient();
 
             MediaType MEDIA_TYPE = MediaType.parse("application/json");
-            String url = "http://192.168.29.173:8001/userapi/";
+            String url = "http://django-env2.eba-pmmersjp.us-west-2.elasticbeanstalk.com/userapi/";
 
 
             String json = "{"
