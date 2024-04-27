@@ -27,9 +27,9 @@ public class landingpage1 extends AppCompatActivity {
 
     private VideoView videoView;
     private MediaController mediaController;
-    //private static final String TAG = "landingpage1";
-    //private static final String MJPEG_URL = "http://192.168.29.173:8001/videostreamapi/";
-    //private WebView webView;
+    private static final String TAG = "landingpage1";
+    private static final String MJPEG_URL = "http://192.168.29.173:8001/videostreamapi/";
+    private WebView webView;
     private TextView TextViewPerson;
     private TextView TextViewLight;
     @Override
@@ -37,17 +37,17 @@ public class landingpage1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landingpage1);
 
-        //webView = findViewById(R.id.webView);
-        //WebSettings webSettings = webView.getSettings();
-        //webSettings.setJavaScriptEnabled(true);
+        webView = findViewById(R.id.webView);
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
 
         // Replace "YOUR_SERVER_URL" with the actual URL of your Django server
-        //String serverUrl = "http://192.168.29.173:8001/videostreamapi/";
+//        String serverUrl = "http://192.168.29.173:8001/videostreamapi/";
 
-       // webView.loadUrl(serverUrl);
+//        webView.loadUrl(serverUrl);
 
         // Enable video playback in the WebView
-        //webView.setWebChromeClient(new WebChromeClient());
+        webView.setWebChromeClient(new WebChromeClient());
 
         TextViewPerson = findViewById(R.id.personTextView);
         TextViewLight = findViewById(R.id.lightTextView);
