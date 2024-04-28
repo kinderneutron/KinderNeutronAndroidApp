@@ -48,12 +48,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Welcome Back!"
+                android:layout_marginBottom="20dp"
                 android:fontFamily="serif"
-                android:textStyle="bold"
-                android:textSize="48sp"
+                android:text="Welcome Back!"
                 android:textColor="@color/red"
-                android:layout_marginBottom="20dp"/>
+                android:textSize="34sp"
+                android:textStyle="bold" />
             <EditText
                 android:id="@+id/username"
                 android:layout_width="match_parent"
@@ -115,17 +115,17 @@
                 android:textSize="18sp" />
 
             <Button
+                android:id="@+id/registerButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/registerButton"
-                android:text="Register"
-                android:fontFamily="serif"
-                android:textStyle="bold"
-                android:textSize="18sp"
                 android:layout_marginTop="20dp"
+                android:backgroundTint="@color/red"
+                android:fontFamily="serif"
+                android:text="Register"
                 android:textColor="@color/white"
-                android:backgroundTint="@color/red"/>
-<!--                android:onClick="onRegisterButtonClicked"-->
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <!--                android:onClick="onRegisterButtonClicked"-->
 <!--                tools:ignore="OnClick" -->
 
 
